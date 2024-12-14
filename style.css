@@ -1,0 +1,49 @@
+/*Mobile  -> 576px
+Tablet  -> 768px
+Laptop  -> 992px
+Desktop -> 1200px */
+:root {
+    --mobile: rgb(241, 172, 92);
+    --tablet: rgb(100, 202, 217);
+    --laptop: rgb(191, 65, 65);
+    --desktop: rgb(255, 198, 40);
+}
+body {
+    font-size: 50px;
+    font-family: sans-serif;
+    color: white;
+}
+.container {
+    display: grid;
+    height: 100vh;
+    background-color: rgb(127, 113, 207);
+    place-items: center;
+}
+#size {
+    position: absolute;
+    top: 60%;
+    transform: translateX(-50%);
+    left: 50%;
+    font-size: 30px;
+    color:blanchedalmond;
+}
+@media screen and (min-width: 576px) {
+    .container{
+        background-color: var(--mobile);
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        background-color: var(--tablet)
+    }
+}
+@media screen and (min-width: 992px) {
+    .container {
+        background-color: var(--laptop)
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        background-color: var(--desktop)
+    }
+}
