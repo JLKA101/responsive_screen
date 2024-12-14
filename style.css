@@ -7,6 +7,8 @@ Desktop -> 1200px */
     --tablet: rgb(100, 202, 217);
     --laptop: rgb(191, 65, 65);
     --desktop: rgb(255, 198, 40);
+    --mobilec: rgb(255, 149, 51);
+    --tabletc: blue;
 }
 body {
     font-size: 50px;
@@ -31,10 +33,17 @@ body {
     .container{
         background-color: var(--mobile);
     }
+    #size{
+        color: var(--mobilec)
+    }
 }
 @media screen and (min-width: 768px) {
     .container {
         background-color: var(--tablet)
+        
+    }
+    #size{
+        color: var(--tabletc)
     }
 }
 @media screen and (min-width: 992px) {
